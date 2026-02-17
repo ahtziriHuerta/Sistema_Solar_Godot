@@ -1,0 +1,14 @@
+2a60927148abd1d33b818b535e306557
+::res://::1771301012
+icon.svg::CompressedTexture2D::5307603962736296482::1771294359::1771300635::1::::<><>::
+::res://Assets/::1771300637
+azul.jpg::CompressedTexture2D::2765945753779932837::1770153944::1771300635::1::::<><>::
+mercurio.png::CompressedTexture2D::1483439160430334557::1770152466::1771300636::1::::<><>::
+sol.png::CompressedTexture2D::6314355669249606610::1770142075::1771300636::1::::<><>::
+tierra.png::CompressedTexture2D::6249417134666976155::1770152481::1771300637::1::::<><>::
+venus.png::CompressedTexture2D::3097406833255007858::1770152476::1771300637::1::::<><>::
+::res://escenas/::1771301080
+main.gd::GDScript::-1::1771301009::0::1::::<>Node2D<>::
+main.tscn::PackedScene::1967478717194392081::1771301105::0::1::::<><>::uid://cv7yrryw5cxf3<>res://escenas/main.gd<>uid://bmdmos86xx554<>uid://bfn3ytfmwks8l<>uid://bken3q0a2glmo<>uid://cvbi8tfha8si2
+planeta.tscn::PackedScene::3235634543478557017::1771301080::0::1::::<><>::uid://veua5lkji7pp
+::res://Scripts/::1771300753

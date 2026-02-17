@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://qkjhtorlyae4"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_depny"]
+[ext_resource type="Texture2D" uid="uid://cv7yrryw5cxf3" path="res://Assets/sol.png" id="1_fmgfl"]
+[ext_resource type="PackedScene" uid="uid://bmdmos86xx554" path="res://escenas/planeta.tscn" id="2_may0g"]
+[ext_resource type="Texture2D" uid="uid://bfn3ytfmwks8l" path="res://Assets/azul.jpg" id="4_7ftpg"]
+[ext_resource type="Texture2D" uid="uid://bken3q0a2glmo" path="res://Assets/venus.png" id="4_ykbji"]
+[ext_resource type="Texture2D" uid="uid://cvbi8tfha8si2" path="res://Assets/tierra.png" id="5_7pbrs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dkwmd"]
+radius = 21.095
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_depny")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-54, 18.0001)
+scale = Vector2(3.97778, 3.12644)
+texture = ExtResource("4_7ftpg")
+
+[node name="Sol" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.377778)
+texture = ExtResource("1_fmgfl")
+
+[node name="Timer" type="Timer" parent="Sol"]
+autostart = true
+
+[node name="Orbita1" type="Node2D" parent="."]
+
+[node name="Planeta" parent="Orbita1" instance=ExtResource("2_may0g")]
+position = Vector2(150, 0)
+
+[node name="Orbita2" type="Node2D" parent="."]
+
+[node name="Planeta2" type="Node2D" parent="Orbita2"]
+position = Vector2(250, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Orbita2/Planeta2"]
+position = Vector2(52.8125, 178.5)
+scale = Vector2(0.0427662, 0.0440741)
+texture = ExtResource("4_ykbji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Orbita2/Planeta2"]
+position = Vector2(53, 181)
+shape = SubResource("CircleShape2D_dkwmd")
+
+[node name="Orbita3" type="Node2D" parent="."]
+
+[node name="Planeta3" type="Node2D" parent="Orbita3"]
+position = Vector2(350, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Orbita3/Planeta3"]
+position = Vector2(53, 177)
+scale = Vector2(0.0416667, 0.0425926)
+texture = ExtResource("5_7pbrs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Orbita3/Planeta3"]
+position = Vector2(52, 177)
+shape = SubResource("CircleShape2D_dkwmd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="timeout" from="Sol/Timer" to="." method="_on_timer_timeout"]
