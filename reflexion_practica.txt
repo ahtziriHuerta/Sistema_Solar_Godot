@@ -1,0 +1,17 @@
+REFLEXIÓN DE LA PRÁCTICA
+
+Durante el desarrollo de esta práctica pude comprender mejor el funcionamiento 
+del motor Godot 4 y su sistema basado en nodos. Al inicio fue necesario familiarizarme 
+con el editor, identificar el panel de escenas, el inspector y el sistema de archivos. 
+La organización jerárquica fue clave para lograr que los planetas orbitan correctamente 
+alrededor del sol, ya que cada objeto depende de su nodo padre.
+
+Aprendí la importancia del uso de la función _process(delta) para crear movimiento 
+suave e independiente de los cuadros por segundo. También comprendí cómo asignar 
+texturas, configurar propiedades visuales y organizar la escena para evitar errores 
+como warnings en nodos de colisión.
+
+Esta práctica me ayudó a entender cómo estructurar un proyecto básico en Godot 
+y cómo aplicar conceptos fundamentales del desarrollo de videojuegos en 2D. 
+Considero que ahora tengo una base más sólida para continuar con proyectos 
+más complejos dentro del motor.

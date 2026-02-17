@@ -1,0 +1,18 @@
+RESUMEN DE LA PRÁCTICA – SISTEMA SOLAR EN GODOT 4
+
+En esta práctica se desarrolló una escena 2D utilizando el motor de videojuegos Godot 4. 
+El objetivo principal fue reconocer la interfaz del editor, comprender la jerarquía de nodos 
+y aplicar conceptos básicos como el uso de Sprite2D, Node2D y Camera2D.
+
+Se creó una escena principal llamada "Main", donde se agregó un fondo espacial, 
+un sol y varios planetas organizados mediante nodos de órbita. 
+Cada planeta está compuesto por un Sprite2D y su correspondiente estructura jerárquica.
+
+Se implementó movimiento de rotación utilizando la función _process(delta), 
+lo que permitió simular el efecto de órbita alrededor del sol.
+
+También se trabajó con el Inspector para modificar propiedades, 
+asignar texturas y organizar correctamente el orden de renderizado.
+
+Esta práctica permitió reforzar el entendimiento del entorno de desarrollo 
+y la estructura basada en nodos que caracteriza a Godot.
